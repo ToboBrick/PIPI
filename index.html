@@ -8,13 +8,35 @@
   </head>
   <body>
     <a class="title" href="/momo.html">
-      <span class="k" style="text-decoration: none;">R</span>
-      <span class="k" style="text-decoration: none;">A</span>
-      <span class="k">N</span>
-      <span class="k">H</span>
-      <span class="k">O</span>
-      <span class="k">S</span>
-      <span class="k">O</span>
+      <span>K</span>
+      <span>U</span>
+      <span>R</span>
+      <span>U</span>
+      <span>S</span>
+      <span>H</span>
+      <span>I</span>
     </a>
+
+    <script>
+      //Made by PIPI
+      let title = document.querySelector(".title");
+      let finished = false;
+
+      title.addEventListener("webkitAnimationEnd", function () {
+        finished = true;
+      });
+
+      title.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        if (finished == true) {
+          title.classList.add("active");
+
+          setTimeout(function () {
+            window.location.href = title.href;
+          }, 3000);
+        }
+      });
+    </script>
   </body>
 </html>
