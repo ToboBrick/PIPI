@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 120px;
+  position: relative;
+  font-family: "Bauhaus 93";
+  background-color: none;
+  float: center;
+  margin-top: 215px;
+
+  text-decoration: none;
+}
+
+.title span {
+  display: inline-block;
+  animation-name: kurushi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@keyframes kurushi {
+  0% {
+    transform: rotateY(90deg);
+  }
+  /*40*/
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 60px;
+  }
+}
